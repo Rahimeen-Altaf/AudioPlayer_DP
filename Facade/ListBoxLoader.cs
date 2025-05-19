@@ -9,9 +9,9 @@ using System.Windows.Forms;
 namespace AudioPlayer.Facade
 {
     
-    public static class ListBoxLoader
+    public  class ListBoxLoader
     {
-        public static void LoadFromDataTable(ListBox listBox, DataTable dataTable, string columnName)
+        public  void LoadFromDataTable(ListBox listBox, DataTable dataTable, string columnName)
         {
             listBox.Items.Clear();
             foreach (DataRow row in dataTable.Rows)

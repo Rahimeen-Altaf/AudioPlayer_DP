@@ -5,24 +5,28 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Data;
 using AudioPlayer.Observer;
+using AudioPlayer.Observer.Enums;
 
 namespace AudioPlayer
 {
     public partial class Login : Form
     {
         private string Person;
-        private LoginValidator _loginValidator;
-        private LoginObserver _loginFormObserver;
-
+        private ObserverManager _observerManager;
+        private AppObserver _appObserver;
+        private MusicPlayerFacade playerFacade;
         public Login(string Person)
         {
             InitializeComponent();
             this.Person = Person;
             cmbPerson.Text = Person;
 
-            _loginValidator = new LoginValidator();
-            _loginFormObserver = new LoginObserver(this); 
-            _loginValidator.RegisterObserver(_loginFormObserver); 
+            playerFacade = new MusicPlayerFacade(null); // or pass actual mediaPlayer if needed
+
+
+            _observerManager = new ObserverManager();
+            _appObserver = new AppObserver(this);
+            _observerManager.RegisterObserver((Observer.Interfaces.IObserver)_appObserver);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -31,10 +35,20 @@ namespace AudioPlayer
             string password = txtPass.Text;
 
             // Trigger login validation
-            _loginValidator.ValidateLogin(username, password, Person);
+           bool isSuccess= playerFacade.ValidateLogin(username, password, Person);
+            if (isSuccess)
+            {
+                HandleLoginSuccess();
+            }
+            else
+            {
+                HandleLoginFailure();
+            }
+
+
 
         }
-       
+
         public void HandleLoginSuccess()
         {
             MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -1,4 +1,5 @@
-﻿using AudioPlayer.Facade;
+﻿using AudioPlayer;
+using AudioPlayer.Facade;
 using AxWMPLib;
 using System.Data;
 using System.Windows.Forms;
@@ -7,20 +8,24 @@ public class MusicPlayerFacade
 {
     private readonly AudioPlayerService audioService;
     private readonly DatabaseService dbService;
+    private readonly ListBoxLoader listBoxLoader;
+    private readonly AuthValidator authValidator;
+
+
 
     public MusicPlayerFacade(AxWindowsMediaPlayer mediaPlayer)
     {
         audioService = new AudioPlayerService(mediaPlayer);
         dbService = new DatabaseService();
+        listBoxLoader= new ListBoxLoader();
+        authValidator = new AuthValidator();
     }
-
-
 
     public void LoadSongs(ListBox lbSongs)
     {
         lbSongs.Items.Clear();
         var dt = dbService.GetAllSongs();
-        ListBoxLoader.LoadFromDataTable(lbSongs, dt, "title");
+        listBoxLoader.LoadFromDataTable(lbSongs, dt, "title");
     }
 
     public void PlaySongByTitle(string title)
@@ -33,17 +38,33 @@ public class MusicPlayerFacade
         }
     }
 
+    public bool ValidateLogin(string username, string password, string person)
+    {
+        bool isSuccess= authValidator.ValidateLogin(username, password, person);
+        if(isSuccess)
+        {
+            //obserber.add();
+        }
+        return isSuccess;
+
+    }
+
+    public bool Signup(string username, string password)
+    {
+        return authValidator.ValidateSignup(username, password);
+    }
+
     public void LoadPlaylists(ListBox listBoxPlaylists)
     {
         listBoxPlaylists.Items.Clear();
         var dt = dbService.GetPlaylists();
-        ListBoxLoader.LoadFromDataTable(listBoxPlaylists, dt, "PlaylistName");
+        listBoxLoader.LoadFromDataTable(listBoxPlaylists, dt, "PlaylistName");
     }
 
     public void LoadSongsFromPlaylist(string playlistName, ListBox listBoxSongs)
     {
         listBoxSongs.Items.Clear();
         var dt = dbService.GetSongsInPlaylist(playlistName);
-        ListBoxLoader.LoadFromDataTable(listBoxSongs, dt, "Title");
+        listBoxLoader.LoadFromDataTable(listBoxSongs, dt, "Title");
     }
 }

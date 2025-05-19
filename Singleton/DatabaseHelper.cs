@@ -11,7 +11,7 @@ public class DatabaseHelper
     // Make the constructor private
     private DatabaseHelper()
     {
-        connectionString = "Data Source=DESKTOP-HHUT6HH\\SQLEXPRESS;Initial Catalog=RAH;Integrated Security=True;Encrypt=False";
+        connectionString = "Data Source=R-A-H\\SQLEXPRESS;Initial Catalog=AudioPlayer1;Integrated Security=True";
     }
 
     public static DatabaseHelper Instance => _instance;

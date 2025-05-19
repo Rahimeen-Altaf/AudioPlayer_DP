@@ -6,6 +6,14 @@ using System.Data.SqlClient;
 public class DatabaseService
 {
     private readonly IDatabaseAdapter dbAdapter;
+    private readonly DatabaseHelper dbHelper;
+
+    public DatabaseService()
+    {
+        dbAdapter = new DatabaseHelperAdapter();
+        dbHelper = DatabaseHelper.Instance;
+    }
+
     public DataTable GetAllSongs()
     {
         return dbAdapter.ExecuteQuery("SELECT title FROM Songs");
@@ -22,7 +30,8 @@ public class DatabaseService
 
     public DataTable GetPlaylists()
     {
-        return dbAdapter.ExecuteQuery("SELECT PlaylistName FROM Playlists");
+        string query = "SELECT PlaylistName FROM Playlists";
+        return dbHelper.ExecuteQuery(query);
     }
 
     public DataTable GetSongsInPlaylist(string playlistName)
@@ -35,6 +44,6 @@ public class DatabaseService
         return dbAdapter.ExecuteQuery(query, new List<SqlParameter> {
             new SqlParameter("@playlistName", playlistName)
         });
-        
+
     }
 }
