@@ -14,13 +14,14 @@ namespace AudioPlayer
 {
     public partial class SignUp : Form
     {
+        private MusicPlayerFacade playerFacade;
 
-        private SignUpValidator validator;
-        private SignUpObserver observer;
 
         public SignUp()
         {
             InitializeComponent();
+            playerFacade = new MusicPlayerFacade(new AxWMPLib.AxWindowsMediaPlayer());
+
         }
 
         private void txtConPass_TextChanged(object sender, EventArgs e)
@@ -41,16 +42,29 @@ namespace AudioPlayer
         {
             string username = txtUsername.Text;
             string password = txtPass.Text;
+            string email= txtEmail.Text;
 
 
-            validator.ValidateSignup(username, password);
+            bool isSuccess = playerFacade.Signup(username, password,email);
+            if (isSuccess)
+            {
+                MessageBox.Show("User added successfully.", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Login loginForm = new Login("User");
+                loginForm.ShowDialog();
+            }else
+            {
+                txtUsername.Text = "";
+                txtPass.Text = "";
+                txtConPass.Text = "";
+                txtEmail.Text = "";
+
+            }
+          
         }
 
         private void SignUp_Load(object sender, EventArgs e)
         {
-            validator = new SignUpValidator();
-            observer = new SignUpObserver(this);
-            validator.RegisterObserver(observer);
+           
 
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
@@ -62,7 +76,6 @@ namespace AudioPlayer
 
         private void SignUp_FormClosed(object sender, FormClosedEventArgs e)
         {
-            validator.UnregisterObserver(observer);
         }
 
     }

@@ -13,7 +13,8 @@ namespace AudioPlayer
 {
     public partial class DeleteSong : Form
     {
-        private DatabaseHelper dbHelper;
+        private readonly DatabaseHelper dbHelper = DatabaseHelper.Instance;
+
         private DataTable dataTable;
         private string name;
         private string currentFormName = "DeleteSongForm";

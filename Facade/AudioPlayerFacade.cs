@@ -49,9 +49,9 @@ public class MusicPlayerFacade
 
     }
 
-    public bool Signup(string username, string password)
+    public bool Signup(string username, string password,string email)
     {
-        return authValidator.ValidateSignup(username, password);
+        return authValidator.ValidateSignup(username, password,email);
     }
 
     public void LoadPlaylists(ListBox listBoxPlaylists)

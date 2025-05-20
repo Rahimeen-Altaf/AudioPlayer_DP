@@ -15,6 +15,7 @@ using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Collections;
 using WMPLib;
 using AxWMPLib;
+using AudioPlayer.Observer.Observers;
 
 
 namespace AudioPlayer
@@ -24,6 +25,10 @@ namespace AudioPlayer
         //private bool isPlaying = false;
         private string currentFormName = "UserPanel";
         private MusicPlayerFacade playerFacade;
+        private OnlineObserver onlineObserver;
+        private readonly ObserverManager _observerManager = ObserverManager.Instance;
+
+
 
 
         string name;
@@ -37,6 +42,9 @@ namespace AudioPlayer
 
         {
             name = username;
+            playerFacade = new MusicPlayerFacade(axWindowsMediaPlayer1);
+            onlineObserver = new OnlineObserver(lbSongs, playerFacade);
+            _observerManager.RegisterObserver(onlineObserver);
 
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudioPlayer.Observer.Observers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace AudioPlayer
     public partial class InsertSongForm : Form
     {
         private readonly DatabaseHelper dbHelper = DatabaseHelper.Instance;
+        private readonly ObserverManager _observerManager = ObserverManager.Instance;
+
         private string name;
         private string currentFormName = "InsertSongForm";
         public InsertSongForm()
@@ -22,12 +25,14 @@ namespace AudioPlayer
             InitializeComponent();
             DatabaseHelper dbHelper = DatabaseHelper.Instance;
 
+
         }
         public InsertSongForm(string name)
         {
             InitializeComponent();
             DatabaseHelper dbHelper = DatabaseHelper.Instance;
             this.name = name;
+
         }
 
         private void SongForm_Load(object sender, EventArgs e)
@@ -83,6 +88,11 @@ namespace AudioPlayer
             // Clear the textboxes
             ClearTextBoxes();
             MessageBox.Show("Song Inserted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            List<string> emails = GetOfflineUserEmailsFromDb();
+            _observerManager.RegisterObserver(new OfflineObserver(emails));
+            _observerManager.NotifyObservers($"{name}  inserted a song 🎶 from {currentFormName}");
+
+
 
 
             // Refresh the DataGridView to show the updated song list
@@ -133,5 +143,23 @@ namespace AudioPlayer
             a.ClearVisitedForms();
             Application.Exit();
         }
+        private List<string> GetOfflineUserEmailsFromDb()
+        {
+            string query = "SELECT Email FROM [RAH].[dbo].[User_LoginSignup]";
+  
+
+            DataTable dt = dbHelper.ExecuteQuery(query);
+            List<string> emails = new List<string>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string email = row["Email"].ToString();
+                if (!string.IsNullOrEmpty(email))
+                    emails.Add(email);
+            }
+
+            return emails;
+        }
+
     }
 }

@@ -15,15 +15,20 @@ namespace AudioPlayer
 
         private string currentFormName = "AdminCRUD";
         private string name;
+
         public AdminCRUD()
         {
             InitializeComponent();
+
+
         }
         public AdminCRUD(string name)
         {
             InitializeComponent();
             this.name = name;
+
         }
+
 
         private void cmbOperation_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -33,6 +38,7 @@ namespace AudioPlayer
             {
                 case "Insert Song":
                     context.SetStrategy(new InsertSongStrategy());
+
                     break;
                 case "Delete Song":
                     context.SetStrategy(new DeleteSongStrategy());

@@ -138,11 +138,12 @@
     <Compile Include="Observerr\Admincs.cs" />
     <Compile Include="Observerr\ISubject.cs" />
     <Compile Include="Observerr\IObserver.cs" />
-    <Compile Include="Observer\Enums\ObserverType.cs" />
     <Compile Include="Observer\Interfaces\IObserver.cs" />
     <Compile Include="Observer\Interfaces\IObservable.cs" />
     <Compile Include="Observer\Managers\ObserverManager.cs" />
     <Compile Include="Observer\Observers\AppObserver.cs" />
+    <Compile Include="Observer\Observers\OfflineObserver.cs" />
+    <Compile Include="Observer\Observers\OnlineObserver.cs" />
     <Compile Include="Singleton\DatabaseHelper.cs" />
     <Compile Include="DeleteSong.cs">
       <SubType>Form</SubType>
