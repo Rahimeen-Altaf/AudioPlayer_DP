@@ -22,12 +22,12 @@ namespace AudioPlayer
         public UpdateSongForm()
         {
             InitializeComponent();
-            this.dbAdapter = new DatabaseHelperAdapter();
+            this.dbAdapter = SqlClientAdapter.getInstance();
         }
         public UpdateSongForm(string name)
         {
             InitializeComponent();
-            this.dbAdapter = new DatabaseHelperAdapter();
+            this.dbAdapter = SqlClientAdapter.getInstance();
             this.name = name;
         }
 

@@ -6,12 +6,10 @@ using System.Data.SqlClient;
 public class DatabaseService
 {
     private readonly IDatabaseAdapter dbAdapter;
-    private readonly DatabaseHelper dbHelper;
 
     public DatabaseService()
     {
-        dbAdapter = new DatabaseHelperAdapter();
-        dbHelper = DatabaseHelper.Instance;
+        dbAdapter = SqlClientAdapter.getInstance();
     }
 
     public DataTable GetAllSongs()
@@ -31,7 +29,7 @@ public class DatabaseService
     public DataTable GetPlaylists()
     {
         string query = "SELECT PlaylistName FROM Playlists";
-        return dbHelper.ExecuteQuery(query);
+        return dbAdapter.ExecuteQuery(query);
     }
 
     public DataTable GetSongsInPlaylist(string playlistName)

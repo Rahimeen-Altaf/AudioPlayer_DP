@@ -92,8 +92,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActivityLOG.cs" />
-    <Compile Include="Adapter\Database\DatabaseHelperAdapter.cs" />
-    <Compile Include="Adapter\Database\IDatabaseAdapter.cs" />
+    <Compile Include="SingletonAdapter\Database\SqlClientAdapter.cs" />
+    <Compile Include="SingletonAdapter\Database\IDatabaseAdapter.cs" />
     <Compile Include="AdminCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,16 +135,11 @@
     <Compile Include="Factory\ConcreteAdminLoginForm.cs" />
     <Compile Include="Factory\ConcreteUserLoginForm.cs" />
     <Compile Include="Factory\ConcreteSignUpForm.cs" />
-    <Compile Include="Observerr\Admincs.cs" />
-    <Compile Include="Observerr\ISubject.cs" />
-    <Compile Include="Observerr\IObserver.cs" />
     <Compile Include="Observer\Interfaces\IObserver.cs" />
     <Compile Include="Observer\Interfaces\IObservable.cs" />
     <Compile Include="Observer\Managers\ObserverManager.cs" />
-    <Compile Include="Observer\Observers\AppObserver.cs" />
-    <Compile Include="Observer\Observers\OfflineObserver.cs" />
-    <Compile Include="Observer\Observers\OnlineObserver.cs" />
-    <Compile Include="Singleton\DatabaseHelper.cs" />
+    <Compile Include="Observer\Observers\EmailObserver.cs" />
+    <Compile Include="Observer\Observers\UIObserver.cs" />
     <Compile Include="DeleteSong.cs">
       <SubType>Form</SubType>
     </Compile>

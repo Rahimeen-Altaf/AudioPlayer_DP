@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace AudioPlayer.Observer.Observers
 {
-    public class OnlineObserver : IObserver
+    public class UIObserver : IObserver
     {
         private ListBox _songsListBox;
         private MusicPlayerFacade _playerFacade;
 
-        public OnlineObserver(ListBox songsListBox, MusicPlayerFacade playerFacade)
+        public UIObserver(ListBox songsListBox, MusicPlayerFacade playerFacade)
         {
             _songsListBox = songsListBox;
             _playerFacade = playerFacade;

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-public class ObserverManager
+public class ObserverManager : IObservable
 {
     private static ObserverManager _instance;
     private static readonly object _lock = new object();
@@ -27,6 +27,12 @@ public class ObserverManager
     {
         if (!observers.Contains(observer))
             observers.Add(observer);
+    }
+
+    public void UnregisterObserver(IObserver observer)
+    {
+        if (observers.Contains(observer))
+            observers.Remove(observer);
     }
 
     public void NotifyObservers(string message)

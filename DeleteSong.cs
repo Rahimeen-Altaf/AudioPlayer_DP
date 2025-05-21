@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudioPlayer.Adapter.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,7 @@ namespace AudioPlayer
 {
     public partial class DeleteSong : Form
     {
-        private readonly DatabaseHelper dbHelper = DatabaseHelper.Instance;
+        private readonly SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
 
         private DataTable dataTable;
         private string name;
@@ -21,12 +22,12 @@ namespace AudioPlayer
         public DeleteSong()
         {
             InitializeComponent();
-            DatabaseHelper dbHelper = DatabaseHelper.Instance;
+            SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
         }
         public DeleteSong(string name)
         {
             InitializeComponent();
-            DatabaseHelper dbHelper = DatabaseHelper.Instance;
+            SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
             this.name = name;
         }
 
@@ -70,7 +71,7 @@ namespace AudioPlayer
                 new SqlParameter("@songID", songID)
             };
 
-                    DatabaseHelper dbHelper = DatabaseHelper.Instance;
+                    SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
                     dbHelper.ExecuteNonQuery(deleteQuery, parameters);
 
                     // Refresh the DataGridView

@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System;
+using AudioPlayer.Adapter.Database;
 
 public class ActivityLOG
 {
-    private readonly DatabaseHelper dbHelper;
+    private readonly SqlClientAdapter dbHelper;
 
     public ActivityLOG()
     {
-        dbHelper = DatabaseHelper.Instance;
+        dbHelper = SqlClientAdapter.getInstance();
     }
 
     public void InsertActivityLog(string name, string currentFormName, string userVisited)

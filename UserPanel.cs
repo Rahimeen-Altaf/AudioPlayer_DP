@@ -25,7 +25,7 @@ namespace AudioPlayer
         //private bool isPlaying = false;
         private string currentFormName = "UserPanel";
         private MusicPlayerFacade playerFacade;
-        private OnlineObserver onlineObserver;
+        private UIObserver onlineObserver;
         private readonly ObserverManager _observerManager = ObserverManager.Instance;
 
 
@@ -43,7 +43,7 @@ namespace AudioPlayer
         {
             name = username;
             playerFacade = new MusicPlayerFacade(axWindowsMediaPlayer1);
-            onlineObserver = new OnlineObserver(lbSongs, playerFacade);
+            onlineObserver = new UIObserver(lbSongs, playerFacade);
             _observerManager.RegisterObserver(onlineObserver);
 
         }

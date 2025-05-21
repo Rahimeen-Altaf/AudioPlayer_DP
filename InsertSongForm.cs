@@ -1,4 +1,5 @@
-﻿using AudioPlayer.Observer.Observers;
+﻿using AudioPlayer.Adapter.Database;
+using AudioPlayer.Observer.Observers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,7 @@ namespace AudioPlayer
 {
     public partial class InsertSongForm : Form
     {
-        private readonly DatabaseHelper dbHelper = DatabaseHelper.Instance;
+        private readonly SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
         private readonly ObserverManager _observerManager = ObserverManager.Instance;
 
         private string name;
@@ -23,14 +24,14 @@ namespace AudioPlayer
         public InsertSongForm()
         {
             InitializeComponent();
-            DatabaseHelper dbHelper = DatabaseHelper.Instance;
+            SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
 
 
         }
         public InsertSongForm(string name)
         {
             InitializeComponent();
-            DatabaseHelper dbHelper = DatabaseHelper.Instance;
+            SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
             this.name = name;
 
         }
@@ -89,7 +90,7 @@ namespace AudioPlayer
             ClearTextBoxes();
             MessageBox.Show("Song Inserted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List<string> emails = GetOfflineUserEmailsFromDb();
-            _observerManager.RegisterObserver(new OfflineObserver(emails));
+            _observerManager.RegisterObserver(new EmailObserver(emails));
             _observerManager.NotifyObservers($"{name}  inserted a song 🎶 from {currentFormName}");
 
 
@@ -145,7 +146,7 @@ namespace AudioPlayer
         }
         private List<string> GetOfflineUserEmailsFromDb()
         {
-            string query = "SELECT Email FROM [RAH].[dbo].[User_LoginSignup]";
+            string query = "SELECT Email FROM [AudioPlayer1].[dbo].[User_LoginSignup]";
   
 
             DataTable dt = dbHelper.ExecuteQuery(query);
