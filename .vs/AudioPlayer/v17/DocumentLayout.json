@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\factory\\product\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\factory\\product\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:factory\\product\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,11 +23,11 @@
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:facade\\audioplayerfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\observer\\observers\\appobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\observer\\observers\\appobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:observer\\observers\\appobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\facade\\authvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\facade\\authvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:facade\\authvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,19 +35,15 @@
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:facade\\audioplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\observer\\managers\\observermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\observer\\managers\\observermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:observer\\managers\\observermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\observer\\enums\\observertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:observer\\enums\\observertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\factory\\concreteuserloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:factory\\concreteuserloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\observer\\interfaces\\iobservable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\observer\\interfaces\\iobservable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:observer\\interfaces\\iobservable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -63,7 +59,7 @@
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:updatesongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\observer\\interfaces\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\observer\\interfaces\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:observer\\interfaces\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -79,15 +75,15 @@
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\observerr\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\observerr\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:observerr\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\observerr\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\observerr\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:observerr\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|d:\\uni\\6thsemester\\dp\\projects\\audioplayer_dp\\observerr\\admincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\observerr\\admincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:observerr\\admincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -189,6 +185,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\updatesongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434FA265-5704-4729-A394-599751C1F670}|AudioPlayer.csproj|solutionrelative:updatesongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observer\\Enums\\ObserverType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Observer\\Enums\\ObserverType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -198,8 +198,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 126,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\Product\\Login.cs",
+              "RelativeDocumentMoniker": "Factory\\Product\\Login.cs",
+              "ToolTip": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\Product\\Login.cs",
+              "RelativeToolTip": "Factory\\Product\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T16:51:55.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ObserverType.cs",
+              "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observer\\Enums\\ObserverType.cs",
+              "RelativeDocumentMoniker": "Observer\\Enums\\ObserverType.cs",
+              "ToolTip": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observer\\Enums\\ObserverType.cs",
+              "RelativeToolTip": "Observer\\Enums\\ObserverType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:48:44.669Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -210,8 +239,7 @@
               "RelativeToolTip": "Observer\\Observers\\AppObserver.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwBwAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:49:43.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:49:43.019Z"
             },
             {
               "$type": "Document",
@@ -223,8 +251,7 @@
               "RelativeToolTip": "Facade\\AudioPlayerFacade.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T17:09:55.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T17:09:55.438Z"
             },
             {
               "$type": "Document",
@@ -240,19 +267,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\Product\\Login.cs",
-              "RelativeDocumentMoniker": "Factory\\Product\\Login.cs",
-              "ToolTip": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\Product\\Login.cs",
-              "RelativeToolTip": "Factory\\Product\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T16:51:55.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Facade\\DatabaseService.cs",
@@ -261,8 +275,7 @@
               "RelativeToolTip": "Facade\\DatabaseService.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAA6wBQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T16:52:32.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T16:52:32.376Z"
             },
             {
               "$type": "Document",
@@ -274,8 +287,7 @@
               "RelativeToolTip": "Facade\\ListBoxLoader.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T17:09:52.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T17:09:52.753Z"
             },
             {
               "$type": "Document",
@@ -287,8 +299,7 @@
               "RelativeToolTip": "Facade\\AuthValidator.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T16:24:58.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T16:24:58.057Z"
             },
             {
               "$type": "Document",
@@ -300,8 +311,7 @@
               "RelativeToolTip": "Facade\\AudioPlayerService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T17:08:29.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T17:08:29.756Z"
             },
             {
               "$type": "Document",
@@ -313,25 +323,11 @@
               "RelativeToolTip": "Observer\\Managers\\ObserverManager.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwBgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:49:25.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:49:25.073Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ObserverType.cs",
-              "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observer\\Enums\\ObserverType.cs",
-              "RelativeDocumentMoniker": "Observer\\Enums\\ObserverType.cs",
-              "ToolTip": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observer\\Enums\\ObserverType.cs",
-              "RelativeToolTip": "Observer\\Enums\\ObserverType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:48:44.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "ConcreteUserLoginForm.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\ConcreteUserLoginForm.cs",
               "RelativeDocumentMoniker": "Factory\\ConcreteUserLoginForm.cs",
@@ -339,12 +335,11 @@
               "RelativeToolTip": "Factory\\ConcreteUserLoginForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T22:03:58.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T22:03:58.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "IObservable.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observer\\Interfaces\\IObservable.cs",
               "RelativeDocumentMoniker": "Observer\\Interfaces\\IObservable.cs",
@@ -352,24 +347,22 @@
               "RelativeToolTip": "Observer\\Interfaces\\IObservable.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:48:55.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:48:55.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "UserPanel.cs [Design]",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\UserPanel.cs",
               "RelativeDocumentMoniker": "UserPanel.cs",
               "ToolTip": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\UserPanel.cs [Design]",
               "RelativeToolTip": "UserPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:05:44.719Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-14T20:05:44.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "UserPanel.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\UserPanel.cs",
               "RelativeDocumentMoniker": "UserPanel.cs",
@@ -377,24 +370,22 @@
               "RelativeToolTip": "UserPanel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T16:55:39.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T16:55:39.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "UpdateSongForm.cs [Design]",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\UpdateSongForm.cs",
               "RelativeDocumentMoniker": "UpdateSongForm.cs",
               "ToolTip": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\UpdateSongForm.cs [Design]",
               "RelativeToolTip": "UpdateSongForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T17:02:53.745Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-07T17:02:53.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "IObserver.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observer\\Interfaces\\IObserver.cs",
               "RelativeDocumentMoniker": "Observer\\Interfaces\\IObserver.cs",
@@ -402,12 +393,11 @@
               "RelativeToolTip": "Observer\\Interfaces\\IObserver.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:51:10.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:51:10.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Welcome.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Welcome.cs",
               "RelativeDocumentMoniker": "Welcome.cs",
@@ -415,12 +405,11 @@
               "RelativeToolTip": "Welcome.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAjwDMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T16:59:05.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T16:59:05.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "IFormFactory.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\IFormFactory.cs",
               "RelativeDocumentMoniker": "Factory\\IFormFactory.cs",
@@ -428,24 +417,22 @@
               "RelativeToolTip": "Factory\\IFormFactory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T22:05:10.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T22:05:10.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "Welcome.cs [Design]",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Welcome.cs",
               "RelativeDocumentMoniker": "Welcome.cs",
               "ToolTip": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Welcome.cs [Design]",
               "RelativeToolTip": "Welcome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T16:59:03.986Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-07T16:59:03.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "ISubject.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observerr\\ISubject.cs",
               "RelativeDocumentMoniker": "Observerr\\ISubject.cs",
@@ -453,12 +440,11 @@
               "RelativeToolTip": "Observerr\\ISubject.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:10:40.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:10:40.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "IObserver.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observerr\\IObserver.cs",
               "RelativeDocumentMoniker": "Observerr\\IObserver.cs",
@@ -466,12 +452,11 @@
               "RelativeToolTip": "Observerr\\IObserver.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:10:40.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:10:40.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Admincs.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Observerr\\Admincs.cs",
               "RelativeDocumentMoniker": "Observerr\\Admincs.cs",
@@ -479,12 +464,11 @@
               "RelativeToolTip": "Observerr\\Admincs.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwBgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:10:37.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:10:37.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "InsertSongForm.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\InsertSongForm.cs",
               "RelativeDocumentMoniker": "InsertSongForm.cs",
@@ -492,12 +476,11 @@
               "RelativeToolTip": "InsertSongForm.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAA3wDAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:25:12.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:25:12.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "InsertSongStrategy.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\AdminOperationStrategies\\InsertSongStrategy.cs",
               "RelativeDocumentMoniker": "AdminOperationStrategies\\InsertSongStrategy.cs",
@@ -505,24 +488,22 @@
               "RelativeToolTip": "AdminOperationStrategies\\InsertSongStrategy.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T18:56:28.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T18:56:28.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "InsertSongForm.cs [Design]",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\InsertSongForm.cs",
               "RelativeDocumentMoniker": "InsertSongForm.cs",
               "ToolTip": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\InsertSongForm.cs [Design]",
               "RelativeToolTip": "InsertSongForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T17:07:54.377Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-07T17:07:54.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "masterDataSet1.xsd",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\masterDataSet1.xsd",
               "RelativeDocumentMoniker": "masterDataSet1.xsd",
@@ -533,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "masterDataSet3.xsd",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\masterDataSet3.xsd",
               "RelativeDocumentMoniker": "masterDataSet3.xsd",
@@ -544,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "Song.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Song.cs",
               "RelativeDocumentMoniker": "Song.cs",
@@ -556,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "ClsVisitedForms.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\ClsVisitedForms.cs",
               "RelativeDocumentMoniker": "ClsVisitedForms.cs",
@@ -568,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "masterDataSet2.xsd",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\masterDataSet2.xsd",
               "RelativeDocumentMoniker": "masterDataSet2.xsd",
@@ -579,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -591,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "masterDataSet.xsd",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\masterDataSet.xsd",
               "RelativeDocumentMoniker": "masterDataSet.xsd",
@@ -602,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "AudioPlayerDataSet2.xsd",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\AudioPlayerDataSet2.xsd",
               "RelativeDocumentMoniker": "AudioPlayerDataSet2.xsd",
@@ -613,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Singleton\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "Singleton\\DatabaseHelper.cs",
@@ -625,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "IDatabaseAdapter.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Adapter\\Database\\IDatabaseAdapter.cs",
               "RelativeDocumentMoniker": "Adapter\\Database\\IDatabaseAdapter.cs",
@@ -637,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "UpdateSongStrategy.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\AdminOperationStrategies\\UpdateSongStrategy.cs",
               "RelativeDocumentMoniker": "AdminOperationStrategies\\UpdateSongStrategy.cs",
@@ -649,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "AdminOperationContext.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\AdminOperationStrategies\\AdminOperationContext.cs",
               "RelativeDocumentMoniker": "AdminOperationStrategies\\AdminOperationContext.cs",
@@ -661,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "IAdminOperationStrategy.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\AdminOperationStrategies\\IAdminOperationStrategy.cs",
               "RelativeDocumentMoniker": "AdminOperationStrategies\\IAdminOperationStrategy.cs",
@@ -673,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "SignUp.cs [Design]",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\Product\\SignUp.cs",
               "RelativeDocumentMoniker": "Factory\\Product\\SignUp.cs",
@@ -684,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "DeleteSongStrategy.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\AdminOperationStrategies\\DeleteSongStrategy.cs",
               "RelativeDocumentMoniker": "AdminOperationStrategies\\DeleteSongStrategy.cs",
@@ -696,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "ConcreteSignUpForm.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\ConcreteSignUpForm.cs",
               "RelativeDocumentMoniker": "Factory\\ConcreteSignUpForm.cs",
@@ -708,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "ConcreteAdminLoginForm.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\ConcreteAdminLoginForm.cs",
               "RelativeDocumentMoniker": "Factory\\ConcreteAdminLoginForm.cs",
@@ -720,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "SignUp.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Factory\\Product\\SignUp.cs",
               "RelativeDocumentMoniker": "Factory\\Product\\SignUp.cs",
@@ -732,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "DatabaseHelperAdapter.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\Adapter\\Database\\DatabaseHelperAdapter.cs",
               "RelativeDocumentMoniker": "Adapter\\Database\\DatabaseHelperAdapter.cs",
@@ -744,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "ClassDiagram2.cd",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\ClassDiagram2.cd",
               "RelativeDocumentMoniker": "ClassDiagram2.cd",
@@ -755,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "ClassDiagram1.cd",
@@ -766,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "UpdateSongForm.cs",
               "DocumentMoniker": "D:\\UNI\\6thSemester\\DP\\PROJECTS\\AudioPlayer_DP\\UpdateSongForm.cs",
               "RelativeDocumentMoniker": "UpdateSongForm.cs",
@@ -774,8 +755,7 @@
               "RelativeToolTip": "UpdateSongForm.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T17:02:55.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T17:02:55.409Z"
             }
           ]
         }
