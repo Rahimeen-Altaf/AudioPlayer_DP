@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ActivityLOG" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAARAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ActivityLOG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdminOperationContext" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminOperationStrategies\AdminOperationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeleteSongStrategy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminOperationStrategies\DeleteSongStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsertSongStrategy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminOperationStrategies\InsertSongStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UpdateSongStrategy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminOperationStrategies\UpdateSongStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AudioPlayerService" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAEA=</HashCode>
+      <FileName>Facade\AudioPlayerService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DatabaseService" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAQAAAAAAACAAAAAAAAAEABAI=</HashCode>
+      <FileName>Facade\DatabaseService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicPlayerFacade" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAACAAAAAAAAQAAAAAAAAAAAACAAAAEgAAAAAAAAAA=</HashCode>
+      <FileName>Facade\MusicPlayerFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcreteAdminLoginForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\ConcreteAdminLoginForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcreteSignUpForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\ConcreteSignUpForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcreteUserLoginForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\ConcreteUserLoginForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignUpObserver" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\SignUp\SignUpObserver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignUpValidator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAQAAAAAAAAAAAAAAAAAAAQIAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Observer\SignUp\SignupValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DatabaseHelper" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAgAAAAAAEAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Singleton\DatabaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.Adapter.Database.DatabaseHelperAdapter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Adapter\Database\DatabaseHelperAdapter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AudioPlayer.AdminCRUD" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAACBAAAACAACBCAAAEAAAAIQAAAAAAgAA=</HashCode>
+      <FileName>AdminCRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAEAgCQBgAACAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet1" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAEAgCQBgAACAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet2" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAEAgCQBgAACAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet3" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAEAgCQBgAACAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet4" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAEAgCQBgAACAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.ClsVisitedForms" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClsVisitedForms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.DeleteSong" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIEAAAAAhCAAEJAQAACgQABCAAkEMAAAoABgAYBIgAA=</HashCode>
+      <FileName>DeleteSong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.Login" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJABAAAAACEFAAAAAACAQgBCAIAACQIAAFAAAQBACAQ=</HashCode>
+      <FileName>Factory\Product\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.SignUp" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IhAIAAAAACMEAAEAIACCQAACAAAAAAAAABQAEYAAAAQ=</HashCode>
+      <FileName>Factory\Product\SignUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.InsertSongForm" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EKgCAAAAgCABEJAAIISgQABKAAEEEgAApABgIYBIgCA=</HashCode>
+      <FileName>InsertSongForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAZABAAAQAAAEAgCQBgAAAAAAAEgBBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet1" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAEAgCQBgAACAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet2" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAEAgCQBgAACAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet3" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAEAgCQBgAACAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.Program" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.RAHDataSet" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEQAADAAwAAAALABAAERCAAEAgCYBgAAGAAEEcAJBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.Song" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAEAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Song.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.UpdateSongForm" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJQCAAAAhCABEJAQIAGgQABCAAkkMAAApABwIYHIgAA=</HashCode>
+      <FileName>UpdateSongForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.UserPanel" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAABQBCAgANAQAACAQEBCAAoMkABAIARAAYBAgAQ=</HashCode>
+      <FileName>UserPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.Welcome" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAIAAASAAAAAAAACAAAACCAAQCAIAAAAAAABAAAA=</HashCode>
+      <FileName>Welcome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSetTableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABAEBAAAAMAAiAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet1TableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet1TableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABAEBAAAAMAAiAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet2TableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet2TableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABAEBAAAAMAAiAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet3TableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet3TableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABAEBAAAAMAAiAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet4TableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.AudioPlayerDataSet4TableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABAEBAAAAMAAiAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.Facade.ListBoxLoader" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Facade\ListBoxLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSetTableAdapters.songsTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABIEBAAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet1TableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet1TableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABAEBAAAAMAAiAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet2TableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet2TableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABAEBAAAAMAAiAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet3TableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.masterDataSet3TableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCAAABABAEBAAAAMAAiAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.Observer.LoginObserver" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\Login\LoginFormObserver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AudioPlayer.Observer.LoginValidator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAAAAAAAQgAAA=</HashCode>
+      <FileName>Observer\Login\LoginValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AudioPlayer.Properties.Resources" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABCAAAAAABEACAAQABAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.Properties.Settings" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAAAAAAQAAAAAAAAAIAAAAQABAAAAAAQAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.RAHDataSetTableAdapters.Admin_LoginTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.RAHDataSetTableAdapters.PlaylistsTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.RAHDataSetTableAdapters.PlaylistSongsTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.RAHDataSetTableAdapters.SongsTableAdapter" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.RAHDataSetTableAdapters.User_LoginSignupTableAdapter" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioPlayer.RAHDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACCQAQBAhAEBAAAgMACiCAACgAAQAAQAAAAgBAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IAdminOperationStrategy" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminOperationStrategies\IAdminOperationStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ILoginObserver" Collapsed="true">
+    <Position X="5.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\Login\ILoginObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IObservable" Collapsed="true">
+    <Position X="7.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Observer\Login\IObservable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ISignupObservable" Collapsed="true">
+    <Position X="9.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Observer\SignUp\ISignUpObservable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ISignUpObserver" Collapsed="true">
+    <Position X="11" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\SignUp\ISignupObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AudioPlayer.Adapter.Database.IDatabaseAdapter" Collapsed="true">
+    <Position X="2.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Adapter\Database\IDatabaseAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AudioPlayer.Factory.IFormFactory" Collapsed="true">
+    <Position X="4" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\IFormFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
