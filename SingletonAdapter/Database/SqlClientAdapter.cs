@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace AudioPlayer.Adapter.Database
 {
-    public class SqlClientAdapter : IDatabaseAdapter
+    public class SqlClientAdapter : DatabaseTarget
     {
         private static SqlClientAdapter _instance;
 
@@ -18,14 +18,14 @@ namespace AudioPlayer.Adapter.Database
 
         public static SqlClientAdapter getInstance()
         {
-                if (_instance == null)
-                {
-                    _instance = new SqlClientAdapter();
-                }
-                return _instance;
+            if (_instance == null)
+            {
+                _instance = new SqlClientAdapter();
+            }
+            return _instance;
         }
 
-        public DataTable ExecuteQuery(string query)
+        public override DataTable ExecuteQuery(string query)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -38,7 +38,7 @@ namespace AudioPlayer.Adapter.Database
             }
         }
 
-        public DataTable ExecuteQuery(string query, List<SqlParameter> parameters)
+        public override DataTable ExecuteQuery(string query, List<SqlParameter> parameters)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -54,7 +54,7 @@ namespace AudioPlayer.Adapter.Database
             }
         }
 
-        public void ExecuteNonQuery(string query, List<SqlParameter> parameters)
+        public override void ExecuteNonQuery(string query, List<SqlParameter> parameters)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -65,6 +65,22 @@ namespace AudioPlayer.Adapter.Database
 
                 command.ExecuteNonQuery();
             }
+        }
+
+        public override List<string> GetUserEmailsFromDb()
+        {
+            string query = "SELECT Email FROM [AudioPlayer1].[dbo].[User_LoginSignup]";
+            DataTable dt = ExecuteQuery(query); // removed the stray dot before ExecuteQuery
+
+            List<string> emails = new List<string>();
+            foreach (DataRow row in dt.Rows)
+            {
+                string email = row["Email"].ToString();
+                if (!string.IsNullOrEmpty(email))
+                    emails.Add(email);
+            }
+
+            return emails;
         }
     }
 }

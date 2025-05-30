@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudioPlayer.AdminOperationStrategies.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,7 +33,7 @@ namespace AudioPlayer
 
         private void cmbOperation_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AdminOperationContext context = new AdminOperationContext();
+            AdminOperationContext context = new LoggingContext();
 
             switch (cmbOperation.SelectedItem.ToString())
             {

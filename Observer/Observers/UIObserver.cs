@@ -11,23 +11,23 @@ namespace AudioPlayer.Observer.Observers
     public class UIObserver : IObserver
     {
         private ListBox _songsListBox;
-        private MusicPlayerFacade _playerFacade;
+        private CommonHelperFacadeController facade;
 
-        public UIObserver(ListBox songsListBox, MusicPlayerFacade playerFacade)
+        public UIObserver(ListBox songsListBox, CommonHelperFacadeController _facade)
         {
             _songsListBox = songsListBox;
-            _playerFacade = playerFacade;
+            facade = _facade;
         }
         public void Update(string message)
         {
-            MessageBox.Show($"📣 Notification: {message}", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Notification: {message}", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (_songsListBox.InvokeRequired)
             {
-                _songsListBox.Invoke(new Action(() => _playerFacade.LoadSongs(_songsListBox)));
+                _songsListBox.Invoke(new Action(() => facade.LoadSongs(_songsListBox)));
             }
             else
             {
-                _playerFacade.LoadSongs(_songsListBox);
+                facade.LoadSongs(_songsListBox);
             }
         }
     }

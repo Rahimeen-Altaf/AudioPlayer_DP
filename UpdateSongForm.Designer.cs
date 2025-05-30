@@ -394,7 +394,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UpdateSongForm";
             this.Text = "UpdateSongForm";
-            this.Load += new System.EventHandler(this.UpdateSongForm_Load_1);
+            this.Load += new System.EventHandler(this.UpdateSongForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.masterDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterDataSet2)).EndInit();

@@ -1,4 +1,5 @@
 ﻿using AudioPlayer.Adapter.Database;
+using AudioPlayer.Observer.Observers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace AudioPlayer
     public partial class DeleteSong : Form
     {
         private readonly SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
+        private readonly ObserverManager _observerManager = ObserverManager.Instance;
+        private readonly CommonHelperFacadeController _facadeController = new CommonHelperFacadeController(null);
 
         private DataTable dataTable;
         private string name;
@@ -37,51 +40,56 @@ namespace AudioPlayer
             ActivityLOG a = new ActivityLOG();
             string userVisited = string.Join(", ", ClsVisitedForms.VisitedForms);
             a.InsertActivityLog(name, currentFormName, userVisited);
-            // TODO: This line of code loads data into the 'audioPlayerDataSet1.Songs' table. You can move, or remove it, as needed.
          
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
             LoadSongs();
         }
         private void LoadSongs()
         {
-            string query = "SELECT * FROM Songs";
-            dataTable = dbHelper.ExecuteQuery(query);
+            dataTable = _facadeController.getSongs();
             dataGridView1.DataSource = dataTable;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 // Get the selected row
                 DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-
-                // Get the SongID from the selected row
                 int songID = Convert.ToInt32(selectedRow.Cells[0].Value);
+                string title = selectedRow.Cells[1].Value.ToString();
+                string artist = selectedRow.Cells[2].Value.ToString();
+                string album = selectedRow.Cells[3].Value.ToString();
+                int duration = Convert.ToInt32(selectedRow.Cells[4].Value);
 
-                // Show a confirmation message box
                 DialogResult result = MessageBox.Show("Are you sure you want to delete this song?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
-                    // Execute the delete query
                     string deleteQuery = "DELETE FROM Songs WHERE SongID = @songID";
-
                     List<SqlParameter> parameters = new List<SqlParameter>
             {
                 new SqlParameter("@songID", songID)
             };
 
-                    SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
                     dbHelper.ExecuteNonQuery(deleteQuery, parameters);
 
-                    // Refresh the DataGridView
-                    LoadSongs();
+                    // 🔥 Observer: Notify via Email
+                    List<string> emails = dbHelper.GetUserEmailsFromDb();
+                    var emailObserver = new EmailObserver(emails, _facadeController);
+                    _observerManager.RegisterObserver(emailObserver);
 
-                    // Show a success message
+                    string message = _facadeController.BuildSongNotificationMessage("deleted", title, artist, album, duration);
+                    _observerManager.NotifyObservers(message);
+
+                    // UI updates
+                    LoadSongs();
                     MessageBox.Show("Song deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
+
         private void btnlogout_Click(object sender, EventArgs e)
         {
             ActivityLOG a = new ActivityLOG();

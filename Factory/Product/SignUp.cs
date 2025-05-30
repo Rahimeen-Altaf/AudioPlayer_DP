@@ -14,13 +14,13 @@ namespace AudioPlayer
 {
     public partial class SignUp : Form
     {
-        private MusicPlayerFacade playerFacade;
+        private CommonHelperFacadeController facade;
 
 
         public SignUp()
         {
             InitializeComponent();
-            playerFacade = new MusicPlayerFacade(new AxWMPLib.AxWindowsMediaPlayer());
+            facade = new CommonHelperFacadeController(new AxWMPLib.AxWindowsMediaPlayer());
 
         }
 
@@ -45,7 +45,7 @@ namespace AudioPlayer
             string email= txtEmail.Text;
 
 
-            bool isSuccess = playerFacade.Signup(username, password,email);
+            bool isSuccess = facade.Signup(username, password,email);
             if (isSuccess)
             {
                 MessageBox.Show("User added successfully.", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

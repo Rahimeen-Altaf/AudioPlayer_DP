@@ -14,14 +14,14 @@ namespace AudioPlayer
         private string Person;
         //private ObserverManager _observerManager;
         //private OnlineObserver _onlineObserver;
-        private MusicPlayerFacade playerFacade;
+        private CommonHelperFacadeController facade;
         public Login(string Person)
         {
             InitializeComponent();
             this.Person = Person;
             cmbPerson.Text = Person;
 
-            playerFacade = new MusicPlayerFacade(null); // or pass actual mediaPlayer if needed
+            facade = new CommonHelperFacadeController(null); // or pass actual mediaPlayer if needed
 
 
             //_observerManager = ObserverManager.Instance;
@@ -35,7 +35,7 @@ namespace AudioPlayer
             string password = txtPass.Text;
 
             // Trigger login validation
-           bool isSuccess= playerFacade.ValidateLogin(username, password, Person);
+           bool isSuccess= facade.ValidateLogin(username, password, Person);
             if (isSuccess)
             {
                 HandleLoginSuccess();
@@ -44,8 +44,6 @@ namespace AudioPlayer
             {
                 HandleLoginFailure();
             }
-
-
 
         }
 
@@ -64,7 +62,6 @@ namespace AudioPlayer
             else if (Person == "User")
             {
                 UserPanel userForm = new UserPanel(txtUsername.Text);
-                
 
                 userForm.Show();
             }

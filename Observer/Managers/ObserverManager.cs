@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class ObserverManager : IObservable
 {
     private static ObserverManager _instance;
+
     private static readonly object _lock = new object();
-    private List<IObserver> observers = new List<IObserver>();
 
     private ObserverManager() { }
 
@@ -14,7 +14,7 @@ public class ObserverManager : IObservable
     {
         get
         {
-            lock (_lock)
+            lock (_lock) // Ensures only one thread can access this block at a time
             {
                 if (_instance == null)
                     _instance = new ObserverManager();
@@ -22,6 +22,8 @@ public class ObserverManager : IObservable
             }
         }
     }
+
+    private List<IObserver> observers = new List<IObserver>();
 
     public void RegisterObserver(IObserver observer)
     {

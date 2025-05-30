@@ -81,9 +81,3 @@ namespace AudioPlayer
     }
 
 }
-
-
-//ALTER TABLE[RAH].[dbo].[User_LoginSignup]
-//ADD
-//    [Status] VARCHAR(10) DEFAULT 'Offline',
-//    [Email] VARCHAR(100);

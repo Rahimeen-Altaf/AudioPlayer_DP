@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 public class DatabaseService
 {
-    private readonly IDatabaseAdapter dbAdapter;
+    private readonly DatabaseTarget dbAdapter;
 
     public DatabaseService()
     {
@@ -15,7 +15,11 @@ public class DatabaseService
     public DataTable GetAllSongs()
     {
         return dbAdapter.ExecuteQuery("SELECT title FROM Songs");
+    }
 
+    public DataTable GetSongs()
+    {
+        return dbAdapter.ExecuteQuery("SELECT * FROM songs");
     }
 
     public DataTable GetSongDetails(string title)

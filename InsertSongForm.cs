@@ -18,6 +18,7 @@ namespace AudioPlayer
     {
         private readonly SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
         private readonly ObserverManager _observerManager = ObserverManager.Instance;
+        private readonly CommonHelperFacadeController facade = new CommonHelperFacadeController(null);
 
         private string name;
         private string currentFormName = "InsertSongForm";
@@ -42,13 +43,8 @@ namespace AudioPlayer
             ActivityLOG a = new ActivityLOG();
             string userVisited = string.Join(", ", ClsVisitedForms.VisitedForms);
             a.InsertActivityLog(name, currentFormName, userVisited);
-            //// TODO: This line of code loads data into the 'audioPlayerDataSet4.Songs' table. You can move, or remove it, as needed.
-            //this.songsTableAdapter2.Fill(this.audioPlayerDataSet4.Songs);
-            //// TODO: This line of code loads data into the 'audioPlayerDataSet2.Songs' table. You can move, or remove it, as needed.
-            //this.songsTableAdapter1.Fill(this.audioPlayerDataSet2.Songs);
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
             LoadSongs();
-
         }
 
         private void btnSelectSong_Click(object sender, EventArgs e)
@@ -72,6 +68,7 @@ namespace AudioPlayer
             if (dataTable.Rows.Count > 0)
             {
                 dataGridViewSongs.DataSource = dataTable;
+                dataGridViewSongs.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
         }
 
@@ -89,12 +86,13 @@ namespace AudioPlayer
             // Clear the textboxes
             ClearTextBoxes();
             MessageBox.Show("Song Inserted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            List<string> emails = GetOfflineUserEmailsFromDb();
-            _observerManager.RegisterObserver(new EmailObserver(emails));
-            _observerManager.NotifyObservers($"{name}  inserted a song 🎶 from {currentFormName}");
+            
+            List<string> emails = dbHelper.GetUserEmailsFromDb();
+            _observerManager.RegisterObserver(new EmailObserver(emails, facade));
 
-
-
+            //  dynamic message via facade
+            string message = facade.BuildSongNotificationMessage("added", title, artist, album, duration);
+            _observerManager.NotifyObservers(message);
 
             // Refresh the DataGridView to show the updated song list
             LoadSongs();
@@ -144,23 +142,5 @@ namespace AudioPlayer
             a.ClearVisitedForms();
             Application.Exit();
         }
-        private List<string> GetOfflineUserEmailsFromDb()
-        {
-            string query = "SELECT Email FROM [AudioPlayer1].[dbo].[User_LoginSignup]";
-  
-
-            DataTable dt = dbHelper.ExecuteQuery(query);
-            List<string> emails = new List<string>();
-
-            foreach (DataRow row in dt.Rows)
-            {
-                string email = row["Email"].ToString();
-                if (!string.IsNullOrEmpty(email))
-                    emails.Add(email);
-            }
-
-            return emails;
-        }
-
     }
 }
