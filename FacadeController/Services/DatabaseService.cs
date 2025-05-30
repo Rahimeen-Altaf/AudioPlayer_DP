@@ -5,19 +5,21 @@ using System.Data.SqlClient;
 
 public class DatabaseService
 {
-    private readonly IDatabaseAdapter dbAdapter;
-    private readonly DatabaseHelper dbHelper;
+    private readonly DatabaseTarget dbAdapter;
 
     public DatabaseService()
     {
-        dbAdapter = new DatabaseHelperAdapter();
-        dbHelper = DatabaseHelper.Instance;
+        dbAdapter = SqlClientAdapter.getInstance();
     }
 
     public DataTable GetAllSongs()
     {
         return dbAdapter.ExecuteQuery("SELECT title FROM Songs");
+    }
 
+    public DataTable GetSongs()
+    {
+        return dbAdapter.ExecuteQuery("SELECT * FROM songs");
     }
 
     public DataTable GetSongDetails(string title)
@@ -31,7 +33,7 @@ public class DatabaseService
     public DataTable GetPlaylists()
     {
         string query = "SELECT PlaylistName FROM Playlists";
-        return dbHelper.ExecuteQuery(query);
+        return dbAdapter.ExecuteQuery(query);
     }
 
     public DataTable GetSongsInPlaylist(string playlistName)

@@ -1,5 +1,4 @@
-﻿using AudioPlayer.Observer.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +8,7 @@ namespace AudioPlayer.Observer.Interfaces
 {
     public interface IObserver
     {
-        void Update(ObserverType type, bool isSuccess);
+        void Update(string message);
     }
 
 }

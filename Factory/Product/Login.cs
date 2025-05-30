@@ -5,28 +5,28 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Data;
 using AudioPlayer.Observer;
-using AudioPlayer.Observer.Enums;
+using AudioPlayer.Observer.Observers;
 
 namespace AudioPlayer
 {
     public partial class Login : Form
     {
         private string Person;
-        private ObserverManager _observerManager;
-        private AppObserver _appObserver;
-        private MusicPlayerFacade playerFacade;
+        //private ObserverManager _observerManager;
+        //private OnlineObserver _onlineObserver;
+        private CommonHelperFacadeController facade;
         public Login(string Person)
         {
             InitializeComponent();
             this.Person = Person;
             cmbPerson.Text = Person;
 
-            playerFacade = new MusicPlayerFacade(null); // or pass actual mediaPlayer if needed
+            facade = new CommonHelperFacadeController(null); // or pass actual mediaPlayer if needed
 
 
-            _observerManager = new ObserverManager();
-            _appObserver = new AppObserver(this);
-            _observerManager.RegisterObserver((Observer.Interfaces.IObserver)_appObserver);
+            //_observerManager = ObserverManager.Instance;
+            //_onlineObserver = new OnlineObserver();
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace AudioPlayer
             string password = txtPass.Text;
 
             // Trigger login validation
-           bool isSuccess= playerFacade.ValidateLogin(username, password, Person);
+           bool isSuccess= facade.ValidateLogin(username, password, Person);
             if (isSuccess)
             {
                 HandleLoginSuccess();
@@ -45,24 +45,25 @@ namespace AudioPlayer
                 HandleLoginFailure();
             }
 
-
-
         }
 
         public void HandleLoginSuccess()
         {
             MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //_observerManager.RegisterObserver(_onlineObserver);
+
+
+
             if (Person == "Admin")
             {
                 AdminCRUD adminForm = new AdminCRUD(txtUsername.Text);
-                adminForm.ShowDialog();
+                adminForm.Show();
             }
             else if (Person == "User")
             {
                 UserPanel userForm = new UserPanel(txtUsername.Text);
-                
 
-                userForm.ShowDialog();
+                userForm.Show();
             }
 
         }

@@ -92,19 +92,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActivityLOG.cs" />
-    <Compile Include="Adapter\Database\DatabaseHelperAdapter.cs" />
-    <Compile Include="Adapter\Database\IDatabaseAdapter.cs" />
+    <Compile Include="AdminOperationStrategies\Context\LoggingContext.cs" />
+    <Compile Include="AdminOperationStrategies\Context\PreviewContext.cs" />
+    <Compile Include="FacadeController\Services\EmailService.cs" />
+    <Compile Include="Factory\Creator\ConcreteAdminLoginForm.cs" />
+    <Compile Include="Factory\Creator\ConcreteSignUpForm.cs" />
+    <Compile Include="Factory\Creator\ConcreteUserLoginForm.cs" />
+    <Compile Include="Factory\Creator\IFormFactory.cs" />
+    <Compile Include="SingletonAdapter\Database\SqlClientAdapter.cs" />
+    <Compile Include="SingletonAdapter\Database\DatabaseTarget.cs" />
     <Compile Include="AdminCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminCRUD.Designer.cs">
       <DependentUpon>AdminCRUD.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminOperationStrategies\AdminOperationContext.cs" />
-    <Compile Include="AdminOperationStrategies\DeleteSongStrategy.cs" />
-    <Compile Include="AdminOperationStrategies\IAdminOperationStrategy.cs" />
-    <Compile Include="AdminOperationStrategies\InsertSongStrategy.cs" />
-    <Compile Include="AdminOperationStrategies\UpdateSongStrategy.cs" />
+    <Compile Include="AdminOperationStrategies\Context\AdminOperationContext.cs" />
+    <Compile Include="AdminOperationStrategies\Strategy\DeleteSongStrategy.cs" />
+    <Compile Include="AdminOperationStrategies\Strategy\IAdminOperationStrategy.cs" />
+    <Compile Include="AdminOperationStrategies\Strategy\InsertSongStrategy.cs" />
+    <Compile Include="AdminOperationStrategies\Strategy\UpdateSongStrategy.cs" />
     <Compile Include="AudioPlayerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -131,30 +138,22 @@
       <DependentUpon>AudioPlayerDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="ClsVisitedForms.cs" />
-    <Compile Include="Facade\AuthValidator.cs" />
-    <Compile Include="Factory\ConcreteAdminLoginForm.cs" />
-    <Compile Include="Factory\ConcreteUserLoginForm.cs" />
-    <Compile Include="Factory\ConcreteSignUpForm.cs" />
-    <Compile Include="Observerr\Admincs.cs" />
-    <Compile Include="Observerr\ISubject.cs" />
-    <Compile Include="Observerr\IObserver.cs" />
-    <Compile Include="Observer\Enums\ObserverType.cs" />
+    <Compile Include="FacadeController\Services\AuthValidator.cs" />
     <Compile Include="Observer\Interfaces\IObserver.cs" />
     <Compile Include="Observer\Interfaces\IObservable.cs" />
     <Compile Include="Observer\Managers\ObserverManager.cs" />
-    <Compile Include="Observer\Observers\AppObserver.cs" />
-    <Compile Include="Singleton\DatabaseHelper.cs" />
+    <Compile Include="Observer\Observers\EmailObserver.cs" />
+    <Compile Include="Observer\Observers\UIObserver.cs" />
     <Compile Include="DeleteSong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeleteSong.Designer.cs">
       <DependentUpon>DeleteSong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Facade\AudioPlayerService.cs" />
-    <Compile Include="Facade\DatabaseService.cs" />
-    <Compile Include="Facade\ListBoxLoader.cs" />
-    <Compile Include="Facade\AudioPlayerFacade.cs" />
-    <Compile Include="Factory\IFormFactory.cs" />
+    <Compile Include="FacadeController\Services\AudioPlayerService.cs" />
+    <Compile Include="FacadeController\Services\DatabaseService.cs" />
+    <Compile Include="FacadeController\Services\ListBoxLoader.cs" />
+    <Compile Include="FacadeController\CommonHelperFacadeController.cs" />
     <Compile Include="masterDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -308,8 +307,6 @@
     <None Include="AudioPlayerDataSet4.xss">
       <DependentUpon>AudioPlayerDataSet4.xsd</DependentUpon>
     </None>
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
     <None Include="masterDataSet.xsc">
       <DependentUpon>masterDataSet.xsd</DependentUpon>
     </None>
@@ -380,19 +377,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="music.jpg" />
+    <None Include="images\music.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="music2.jpeg" />
+    <None Include="images\music2.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="music1.jpg" />
+    <None Include="images\music1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="adminimage.jpg" />
+    <None Include="images\adminimage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="adminimage1.jpg" />
+    <None Include="images\adminimage1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">

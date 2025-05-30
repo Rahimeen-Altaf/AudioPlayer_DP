@@ -15,28 +15,31 @@ using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Collections;
 using WMPLib;
 using AxWMPLib;
+using AudioPlayer.Observer.Observers;
 
 
 namespace AudioPlayer
 {
     public partial class UserPanel : Form
     {
-        //private bool isPlaying = false;
         private string currentFormName = "UserPanel";
-        private MusicPlayerFacade playerFacade;
-
-
+        private CommonHelperFacadeController facade;
+        private UIObserver onlineObserver;
+        private readonly ObserverManager _observerManager = ObserverManager.Instance;
         string name;
         public UserPanel()
         {
             InitializeComponent();
-            playerFacade = new MusicPlayerFacade(axWindowsMediaPlayer1);
-            playerFacade.LoadPlaylists(listBoxPlaylists);
+            facade = new CommonHelperFacadeController(axWindowsMediaPlayer1);
+            facade.LoadPlaylists(listBoxPlaylists);
         }
         public UserPanel(string username) : this()
 
         {
             name = username;
+            facade = new CommonHelperFacadeController(axWindowsMediaPlayer1);
+            onlineObserver = new UIObserver(lbSongs, facade);
+            _observerManager.RegisterObserver(onlineObserver);
 
         }
 
@@ -47,14 +50,12 @@ namespace AudioPlayer
             string userVisited = string.Join(", ", ClsVisitedForms.VisitedForms);
             ActivityLOG a = new ActivityLOG();
             a.InsertActivityLog(name, currentFormName, userVisited);
-            playerFacade.LoadPlaylists(listBoxPlaylists);
+            facade.LoadPlaylists(listBoxPlaylists);
         }
 
         private void btnSongs_Click(object sender, EventArgs e)
         {
-            playerFacade.LoadSongs(lbSongs);
-
-
+            facade.LoadSongs(lbSongs);
         }
 
         private WaveOut waveOut;
@@ -78,7 +79,7 @@ namespace AudioPlayer
         private void lbSongs_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lbSongs.SelectedItem != null)
-                playerFacade.PlaySongByTitle(lbSongs.SelectedItem.ToString());
+                facade.PlaySongByTitle(lbSongs.SelectedItem.ToString());
         }
 
        
@@ -93,7 +94,7 @@ namespace AudioPlayer
             {
                 string selectedPlaylist = listBoxPlaylists.SelectedItem.ToString();
 
-                var facade = new MusicPlayerFacade(axWindowsMediaPlayer1);  // Assuming axWindowsMediaPlayer1 is passed
+                var facade = new CommonHelperFacadeController(axWindowsMediaPlayer1);  // Assuming axWindowsMediaPlayer1 is passed
                 facade.LoadSongsFromPlaylist(selectedPlaylist, listBoxSongs);
             }
         }
@@ -102,7 +103,7 @@ namespace AudioPlayer
         {
 
             if (listBoxPlaylists.SelectedItem != null)
-                playerFacade.LoadSongsFromPlaylist(listBoxPlaylists.SelectedItem.ToString(), listBoxSongs);
+                facade.LoadSongsFromPlaylist(listBoxPlaylists.SelectedItem.ToString(), listBoxSongs);
             // Clear existing rows in the dataGridView
         }
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AudioPlayer.Adapter.Database;
+using AudioPlayer.Observer.Observers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,20 +16,25 @@ namespace AudioPlayer
 {
     public partial class InsertSongForm : Form
     {
-        private readonly DatabaseHelper dbHelper = DatabaseHelper.Instance;
+        private readonly SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
+        private readonly ObserverManager _observerManager = ObserverManager.Instance;
+        private readonly CommonHelperFacadeController facade = new CommonHelperFacadeController(null);
+
         private string name;
         private string currentFormName = "InsertSongForm";
         public InsertSongForm()
         {
             InitializeComponent();
-            DatabaseHelper dbHelper = DatabaseHelper.Instance;
+            SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
+
 
         }
         public InsertSongForm(string name)
         {
             InitializeComponent();
-            DatabaseHelper dbHelper = DatabaseHelper.Instance;
+            SqlClientAdapter dbHelper = SqlClientAdapter.getInstance();
             this.name = name;
+
         }
 
         private void SongForm_Load(object sender, EventArgs e)
@@ -36,13 +43,8 @@ namespace AudioPlayer
             ActivityLOG a = new ActivityLOG();
             string userVisited = string.Join(", ", ClsVisitedForms.VisitedForms);
             a.InsertActivityLog(name, currentFormName, userVisited);
-            //// TODO: This line of code loads data into the 'audioPlayerDataSet4.Songs' table. You can move, or remove it, as needed.
-            //this.songsTableAdapter2.Fill(this.audioPlayerDataSet4.Songs);
-            //// TODO: This line of code loads data into the 'audioPlayerDataSet2.Songs' table. You can move, or remove it, as needed.
-            //this.songsTableAdapter1.Fill(this.audioPlayerDataSet2.Songs);
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
             LoadSongs();
-
         }
 
         private void btnSelectSong_Click(object sender, EventArgs e)
@@ -66,6 +68,7 @@ namespace AudioPlayer
             if (dataTable.Rows.Count > 0)
             {
                 dataGridViewSongs.DataSource = dataTable;
+                dataGridViewSongs.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
         }
 
@@ -83,7 +86,13 @@ namespace AudioPlayer
             // Clear the textboxes
             ClearTextBoxes();
             MessageBox.Show("Song Inserted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+            List<string> emails = dbHelper.GetUserEmailsFromDb();
+            _observerManager.RegisterObserver(new EmailObserver(emails, facade));
 
+            //  dynamic message via facade
+            string message = facade.BuildSongNotificationMessage("added", title, artist, album, duration);
+            _observerManager.NotifyObservers(message);
 
             // Refresh the DataGridView to show the updated song list
             LoadSongs();

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AudioPlayer
 {
@@ -50,13 +52,13 @@ namespace AudioPlayer
             {
                 formFactory = new ConcreteAdminLoginForm();
                 Form loginForm = formFactory.CreateForm();
-                loginForm.ShowDialog();
+                loginForm.Show();
 
             }else if(formType == "UserLogin")
             {
                 formFactory = new ConcreteUserLoginForm();
                 Form loginForm = formFactory.CreateForm();
-                loginForm.ShowDialog();
+                loginForm.Show();
             }else
             {
                 MessageBox.Show("Invalid Role");
@@ -69,7 +71,7 @@ namespace AudioPlayer
 
             formFactory = new ConcreteSignUpForm();
             Form signUpForm = formFactory.CreateForm();
-            signUpForm.ShowDialog();
+            signUpForm.Show();
         }
 
         private void Welcome_Load(object sender, EventArgs e)

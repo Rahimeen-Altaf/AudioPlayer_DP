@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudioPlayer.AdminOperationStrategies.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,24 +16,30 @@ namespace AudioPlayer
 
         private string currentFormName = "AdminCRUD";
         private string name;
+
         public AdminCRUD()
         {
             InitializeComponent();
+
+
         }
         public AdminCRUD(string name)
         {
             InitializeComponent();
             this.name = name;
+
         }
+
 
         private void cmbOperation_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AdminOperationContext context = new AdminOperationContext();
+            AdminOperationContext context = new LoggingContext();
 
             switch (cmbOperation.SelectedItem.ToString())
             {
                 case "Insert Song":
                     context.SetStrategy(new InsertSongStrategy());
+
                     break;
                 case "Delete Song":
                     context.SetStrategy(new DeleteSongStrategy());

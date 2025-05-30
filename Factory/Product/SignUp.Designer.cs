@@ -38,6 +38,8 @@
             this.btnSignIn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblError = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +72,7 @@
             this.lblConPass.AutoSize = true;
             this.lblConPass.BackColor = System.Drawing.Color.Transparent;
             this.lblConPass.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConPass.Location = new System.Drawing.Point(63, 150);
+            this.lblConPass.Location = new System.Drawing.Point(63, 189);
             this.lblConPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblConPass.Name = "lblConPass";
             this.lblConPass.Size = new System.Drawing.Size(105, 16);
@@ -82,7 +84,7 @@
             this.lblPass.AutoSize = true;
             this.lblPass.BackColor = System.Drawing.Color.Transparent;
             this.lblPass.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPass.Location = new System.Drawing.Point(84, 121);
+            this.lblPass.Location = new System.Drawing.Point(84, 160);
             this.lblPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(66, 17);
@@ -92,15 +94,15 @@
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(185, 93);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(87, 20);
             this.txtUsername.TabIndex = 4;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(185, 120);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPass.Location = new System.Drawing.Point(185, 159);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(87, 20);
@@ -108,8 +110,8 @@
             // 
             // txtConPass
             // 
-            this.txtConPass.Location = new System.Drawing.Point(185, 149);
-            this.txtConPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConPass.Location = new System.Drawing.Point(185, 188);
+            this.txtConPass.Margin = new System.Windows.Forms.Padding(2);
             this.txtConPass.Name = "txtConPass";
             this.txtConPass.PasswordChar = '*';
             this.txtConPass.Size = new System.Drawing.Size(87, 20);
@@ -118,8 +120,8 @@
             // 
             // btnSignIn
             // 
-            this.btnSignIn.Location = new System.Drawing.Point(130, 181);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignIn.Location = new System.Drawing.Point(130, 220);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(70, 24);
             this.btnSignIn.TabIndex = 8;
@@ -130,6 +132,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.lblError);
             this.panel1.Controls.Add(this.lblSignUp);
             this.panel1.Controls.Add(this.btnSignIn);
@@ -140,9 +144,9 @@
             this.panel1.Controls.Add(this.lblConPass);
             this.panel1.Controls.Add(this.txtPass);
             this.panel1.Location = new System.Drawing.Point(203, 94);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 250);
+            this.panel1.Size = new System.Drawing.Size(350, 296);
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -150,11 +154,31 @@
             // 
             this.lblError.AutoSize = true;
             this.lblError.BackColor = System.Drawing.Color.Transparent;
-            this.lblError.Location = new System.Drawing.Point(183, 167);
+            this.lblError.Location = new System.Drawing.Point(183, 206);
             this.lblError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 9;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(185, 126);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(87, 20);
+            this.txtEmail.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(84, 126);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Email";
             // 
             // SignUp
             // 
@@ -164,7 +188,7 @@
             this.BackgroundImage = global::AudioPlayer.Properties.Resources.music1;
             this.ClientSize = new System.Drawing.Size(783, 435);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SignUp";
             this.Text = "SignUp";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SignUp_FormClosed);
@@ -187,5 +211,7 @@
         private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtEmail;
     }
 }
