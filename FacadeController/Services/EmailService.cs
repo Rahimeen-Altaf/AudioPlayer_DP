@@ -10,7 +10,7 @@ namespace AudioPlayer.Services
         private readonly string smtpHost = "smtp.gmail.com";
         private readonly int smtpPort = 587;
         private readonly string smtpUser = "abbasirahimeen@gmail.com";
-        private readonly string smtpPass = "gjizvijbdqusncyh";
+        private readonly string smtpPass = "abc";
         private readonly string smtpFrom = "abbasirahimeen@gmail.com";
 
         public void SendEmail(string toEmail, string subject, string body)
